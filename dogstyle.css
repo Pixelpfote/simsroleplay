@@ -1,0 +1,335 @@
+body {
+  color: #000000;
+  background-color: #eeeeee;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #444444;
+  width: 718px;
+  margin: 0 auto;
+  position: relative;
+  font-size: 12px;
+}
+
+/* Main column */
+.main {
+  float: right;
+  width: 520px;
+  padding: 10px 10px 20px 0px;
+  margin-top: 20px;
+  line-height: 150%;
+}
+
+.main a {
+  color: #99b686;
+}
+
+table {
+  line-height: 125%;
+}
+    
+/* Fixed sidebar */
+.sidebar {
+  width: 150px;
+  padding: 10px;
+  margin-top: 10px;
+  background: transparent;
+  position: fixed;
+  text-align: center;
+}
+
+/* Name + description */
+.widget {
+  background: #eeeeee;
+  padding: 10px;
+  border-radius: 2px;
+  padding: 10px 0;
+  color: #213f52;
+}
+
+/* Avatar styles */
+.my-avatar {
+  border: 5px solid white;
+  border-radius: 2px;
+  max-width: 128px;
+}
+.my-avatar:hover {
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.avatar-circle {
+  border-radius: 128px;
+}
+    
+/* Blog title */
+.blog-title {
+  font-family: Streetscript, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.92em;
+}
+    
+.blog-description {
+  font-size: 0.92em;
+}
+    
+/* Sidebar link styles */
+.sidebar-links {
+  list-style-type: none;
+  padding-left: 0;
+  background-color: #99b686;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.sidebar-link {
+  font-size: 0.83em;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #ffffff;
+  background-color: #99b686;
+  display: block;
+  padding: 6px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.sidebar-link:last-child {
+  border-bottom: 0;
+}
+.sidebar-link:hover {
+  background-color: rgba(255,255,255,0.2);
+  text-decoration: none;
+  padding-left: 10px;
+  letter-spacing: 1px;
+}
+.sidebar-link .fa {
+  margin-right: 2px;
+}
+.sidebar-link .fa {
+  display: none;
+}
+    
+/* stop old IE from showing borders on linked images */
+a img {
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*img.large {
+  width: 100%;
+  max-width: 510px;
+  border: 5px solid white;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}*/
+
+/* Custom font sizes etc. */
+.dog-name {
+  color: #213f52;
+  font-family: Streetscript, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 26px;
+  padding: 0px 25px;
+  line-height: 30px;
+}
+
+.dog-titles {
+  color: #213f52;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.pixelsubtitle {
+  background: transparent;
+  letter-spacing: 1px;
+  color: #213f52;
+  font-weight: bold;
+  display: inline-block;
+  width: 98%;
+  padding-top: 6px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-bottom: 2px solid #f0f0f0;
+  width: 98%;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 5px solid #ffffff;
+  border-radius: 2px 2px 0px 0px;
+  background-color: #99b686;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: 1px solid white;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  outline: none;
+  cursor: pointer;
+  padding: 2px 10px;
+  transition: 0.3s;
+  color: #213f52;
+  font-family: Arquitecta, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgba(255,255,255,0.3);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: rgba(255,255,255,0.6);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 5px 5px;
+  margin-bottom: 10px;
+  border: 5px solid #ffffff;
+  border-radius: 0px 0px 2px 2px;
+  border-top: none;
+  background-color: #fafafa;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+}
+
+/* Gallery Slideshow */
+.mySlides {display: none}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 510px;
+  height: 287px;
+  position: relative;
+}
+
+/* Next & previous buttons */
+.prev_slide, .next_slide {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  margin-left: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next_slide {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  margin-left: 0px;
+  margin-right: -5px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev_slide:hover, .next_slide:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* Caption text */
+.text_slide {
+  color: #f2f2f2;
+  background-color: rgba(0,0,0,0.4);
+  margin: 0px 0px 0px 5px;
+  padding: 4px 12px;
+  position: absolute;
+  bottom: -5px;
+  width: 95.25%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+/*.numbertext {
+    color: #f2f2f2;
+    background-color: rgba(0,0,0,0.4);
+    margin: 5px 0px 0px 5px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}*/
+/* use with <div class="numbertext">1 / 2</div> */
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Image in Modal Box */
+.myImg {
+  cursor: pointer;
+  width: 510px;
+  height: 287px;
+  object-fit: cover;
+  border: 5px solid white;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.myCert {
+  cursor: pointer;
+  width: 248px;
+  height: auto;
+}
+.myPed {
+  cursor: pointer;
+  width: 160px;
+  height: 90px;
+  object-fit: cover;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  /*padding-top: 100px; *//* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  position: fixed; /* Stay in place */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  display: block;
+  max-width: 80%;
+}
